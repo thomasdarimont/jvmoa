@@ -55,3 +55,10 @@ JvmOption [name=AdaptiveSizePolicyWeight, origin=DEFAULT, value=10, writeable=fa
 JvmOption [name=AdaptiveSizeThroughPutPolicy, origin=DEFAULT, value=0, writeable=false]
 ...
 
+
+BTW There is another way for listing all jvm option values:
+ 
+ Code:
+java -XX:+UnlockDiagnosticVMOptions -XX:+PrintFlagsFinal -version
+
+I don't now how long this flag is already in the jvm but it works at least for Sun / Oracle Java 1.6.0_21
